@@ -1,0 +1,19 @@
+#expPageDiv{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 1005px;
+}
+#boton{
+    display: flex;
+    background-color: #1A0E0E;
+    color: white;
+    width: 500px;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+#divTituloEducacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

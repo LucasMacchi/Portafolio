@@ -1,0 +1,26 @@
+#header-div{
+    display: flex;
+    background-color: #1A0E0E;
+    justify-content:space-between
+}
+#lng-change{
+    display: flex;
+    align-items: center;
+}
+#header-name{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.lng-buttons{
+    color: white;
+    margin-right: 2pc;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#selected-lgn{
+    background-color: white;
+    color: #1A0E0E;
+}

@@ -1,0 +1,87 @@
+#home{
+    display: grid;
+    
+}
+#basic-info{
+    display:inline-flex;
+    justify-content:space-between;
+    margin-bottom: 5pc;
+    margin-top: 5pc;
+}
+#info{
+    width: 500px;
+}
+#profileDiv{
+    width: 300px;
+    margin-left: 2pc;
+}
+#ProfilePicture{
+    width: 80%;
+    border-radius: 100%;
+}
+#Contact_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-info{
+    margin-right: 10pc;
+    padding: 2pc;
+    background-color: #1A0E0E;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+}
+#contact-info-not{
+    margin-right: 10pc;
+    padding: 2pc;
+    width: 265.503px;
+    height: 182.257px;
+}
+#about-me-div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#about_me{
+    padding: 2pc;
+    background-color: #1A0E0E;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+}
+#intro{
+    padding: 2pc;
+    background-color: #1A0E0E;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+}
+.boton{
+    background-color: #1A0E0E;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.boton:hover{
+    background-color: #2c1e1e;
+}
+
+#find-more{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    font-size:xx-large;
+}
+
+#links-find-out{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 20pc;
+    margin-top: 1pc;
+    padding-bottom: 8pc;
+    
+}
