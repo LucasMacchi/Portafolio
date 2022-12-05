@@ -60,12 +60,7 @@ export default function Home(){
                 
             </div>
             {language ? <h4 id='find-more'>Find out more</h4> : <h4 id='find-more'>Descubre mas</h4>}
-            <div id="links-find-out">
-                <button className='boton'>{language ? "Projects" : "Proyectos"}</button>
-                <button className='boton'>{language ? "Experience" : "Experiencia"}</button>
-                <button className='boton'>{language ? "Education" : "Educacion"}</button>
-                <button className='boton'>{language ? "Technologies" : "Tecnologias"}</button>
-            </div>
+            
         </div>
         
     )

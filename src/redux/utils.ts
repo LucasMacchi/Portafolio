@@ -5,7 +5,7 @@ export enum ActionType{
 
 export interface State{
     lgn_eng:boolean,
-    experiences: Array<ExperienceI>
+    education: Array<EducationI>
 }
 
 interface ChangeToEng {
@@ -17,7 +17,7 @@ interface ChangeToEsp {
     type: ActionType.ESP
 }
 
-interface ExperienceI {
+interface EducationI {
     title: string,
     title_eng: string,
     where: string,
@@ -28,6 +28,8 @@ interface ExperienceI {
     des_eng: string
 
 }
+
+
 
 
 export type Action = ChangeToEng | ChangeToEsp

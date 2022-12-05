@@ -2,7 +2,7 @@ import {Action, ActionType, State} from "./utils"
 
 const initialState: State = {
     lgn_eng: false, //cambia el idioma de la pogina
-    experiences: [{
+    education: [{
         title: "Desarollador Full Stack",
         title_eng: "Full Stack Developer",
         where: "SoyHenry Bootcamp",

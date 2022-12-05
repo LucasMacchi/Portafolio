@@ -1,4 +1,3 @@
-import React, {useState} from 'react';
 import { useSelector } from 'react-redux';
 import { State } from '../redux/utils';
 import Card from "../Card_education/Education"
@@ -7,13 +6,13 @@ import "./EducationPage.css"
 export default function ExperiencePage(){
 
     const language = useSelector( (state: State) => state.lgn_eng)
-    const experiences = useSelector( (state: State) => state.experiences )
+    const education = useSelector( (state: State) => state.education )
 
     const createCards = () => {
         return(
-            experiences.map((exp) => {
+            education.map((edu) => {
                 return(
-                    <Card experience={exp}/>
+                    <Card experience={edu}/>
                 )
             })
         )

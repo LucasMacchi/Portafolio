@@ -1,0 +1,40 @@
+#divTech{
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-wrap: wrap;
+}
+.tech_image{
+    width: 100px;
+}
+#nodeImg{
+    width: 160px;
+}
+#reactImg{
+    width: 116px;
+}
+#CssImg{
+    width: 72px;
+}
+#ReduxImg{
+    width: 105px;
+}
+#SeqImg{
+    width: 89px;
+}
+#ExpressImg{
+    width: 180px;
+}
+#PostImg{
+    width: 103px;
+}
+#gitImg{
+    width: 107px;
+}
+.Technologies{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-weight: 600;
+}

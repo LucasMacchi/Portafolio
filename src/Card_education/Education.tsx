@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { State } from '../redux/utils';
 import "./Education.css"
 
-export default function Card_Experience(props: any){
+export default function Education_Card(props: any){
     const language = useSelector( (state: State) => state.lgn_eng)
     console.log(props)
     const expe = props.experience
