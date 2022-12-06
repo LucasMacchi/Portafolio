@@ -5,5 +5,20 @@
     margin: 2pc;
     padding: 25px;
     border-radius: 2pc;
-    height: 300px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+#img{
+    width: 200px;
+    padding: 5px;
+}
+.boton{
+    background-color: #1A0E0E;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+
 }

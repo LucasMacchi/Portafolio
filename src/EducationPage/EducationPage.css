@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     min-height: 1005px;
+    justify-content: center;
 }
 #boton{
     display: flex;

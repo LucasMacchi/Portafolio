@@ -1,18 +1,24 @@
 import React from 'react';
 import Home from "./Home/Home"
+import { State } from './redux/utils';
+import { useSelector, useDispatch } from 'react-redux';
+import Particles from "./Config/Particles";
+import Starter from './Starter/Starter';
 import EducationPage from './EducationPage/EducationPage';
-import Technologies from './Technologies/Tech';
-import Header from './Header/Header';
 import './App.css';
 
 function App() {
 
+  const dispatch = useDispatch()
+  const started = useSelector( (state: State) => state.started)
+
   return (
     <div id='main-div'>
-      <Header/>
-      <Home/>
-      <EducationPage/>
-      <Technologies/>
+      <Particles/>
+      <div id="sec_div">
+        {started ? <Home/> : <Starter/>}
+      </div>
+
     </div>
   );
 }

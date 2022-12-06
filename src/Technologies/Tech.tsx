@@ -36,7 +36,7 @@ export default function Technologies(){
                     <label htmlFor="">CSS</label>
                 </div>
                 <div className='Technologies'>
-                    <img src="https://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png" alt="" id='ReduxImg'/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png?20180308172936" alt="" id='ReduxImg'/>
                     <label htmlFor="">Redux</label>
                 </div>
                 <div className='Technologies'>

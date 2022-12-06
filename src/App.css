@@ -1,3 +1,7 @@
 #main-div{
     background-color:rgb(228, 130, 59);
 }
+#sec_div{
+    position: absolute;
+    z-index: 2;
+}

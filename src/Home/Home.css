@@ -4,7 +4,7 @@
 }
 #basic-info{
     display:inline-flex;
-    justify-content:space-between;
+    justify-content:center;
     margin-bottom: 5pc;
     margin-top: 5pc;
 }
@@ -12,7 +12,7 @@
     width: 500px;
 }
 #profileDiv{
-    width: 300px;
+    width:500px;
     margin-left: 2pc;
 }
 #ProfilePicture{
@@ -85,3 +85,4 @@
     padding-bottom: 8pc;
     
 }
+

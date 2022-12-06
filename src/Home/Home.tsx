@@ -1,36 +1,105 @@
-import React, {useState} from 'react';
-import { useSelector } from 'react-redux';
+import React, {useState, useRef} from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { State } from '../redux/utils';
+import { bindActionCreators } from 'redux';
+import * as acciones from '../redux/actions';
+import EducationPage from '../EducationPage/EducationPage';
+import Technologies from '../Technologies/Tech';
+import "../Header/Header.css"
 import "./Home.css"
 
 export default function Home(){
 
+    const dispatch = useDispatch()
     const language = useSelector( (state: State) => state.lgn_eng)
-
+    const {ChangeToEng, ChangeToEsp} = bindActionCreators(acciones, dispatch)
     const [contactDetail, setContactDetail] = useState(false)
 
-    const showContactDetail = () => {
-        if(contactDetail){
-            return (
-                <div id='contact-info' >
-                        <p>Email: lucasmacchi25@gmail.com</p>
-                        <p>Github: <a href="https://github.com/LucasMacchi">LucasMacchi</a></p>
-                        <p>LinkedIn: <a href="https://www.linkedin.com/in/lucas-macchi-a02956233/">Lucas Macchi</a></p>
+    const edu = useRef(null)
+    const about = useRef(null)
+    const tech = useRef(null)
+
+
+    const scrollToSection = (elementRef: any) => {
+        console.log("going to = ",elementRef)
+        window.scrollTo({
+            top: elementRef.current.offsetTop,
+            behavior: "smooth"
+        })
+    }
+    const navigationBtns = () => {
+        if(language){
+            return(
+                <div id='navBar-header'>
+                    <div className='btn-Div'>
+                        <button className='boton-header' onClick={() => {scrollToSection(about)}}>About me</button>
+                    </div>
+                    <div className='btn-Div'>
+                        <button className='boton-header' onClick={() => {scrollToSection(edu)}}>Education</button>
+                    </div>
+                    <div className='btn-Div'>
+                        <button className='boton-header' onClick={() => {scrollToSection(tech)}}>Technologies</button>
+                    </div>
                 </div>
             )
         }
-        return(
-            <div id='contact-info-not'>
+        else{
+            return(
+                <div id='navBar-header'>
+                    <div className='btn-Div'>
+                        <button className='boton-header' onClick={() => {scrollToSection(about)}}>Sobre mi</button>
+                    </div>
+                    <div className='btn-Div'>
+                        <button className='boton-header' onClick={() => {scrollToSection(edu)}}>Educación</button>
+                    </div>
+                    <div className='btn-Div'>
+                        <button className='boton-header' onClick={() => {scrollToSection(tech)}}>Tecnologias</button>
+                    </div>
+                </div>
+            )
+        }
+    }
 
-            </div>
-        )
-        
+    const languageChange = (order: string) => {
+        if(order === "esp"){
+            ChangeToEsp()
+        }
+        if(order === "eng"){
+            ChangeToEng()
+        }
+    }
+
+    const showBtn = () => {
+        if(language){
+            return(
+                <div id='lng-change'>
+                    <h3 className='lng-buttons' onClick={ () => languageChange("esp")}>ESP</h3>
+                    <h3 className='lng-buttons' id='selected-lgn'>ENG</h3>
+                </div>
+            )
+        }
+        else{
+            return(
+                <div id='lng-change'>
+                    <h3 className='lng-buttons' id='selected-lgn'>ESP</h3>
+                    <h3 className='lng-buttons' onClick={ () => languageChange("eng")}>ENG</h3>
+                </div>
+            )
+        }
     }
 
 
     return(
         <div id='home'>
-            <div id='basic-info'>
+            <div id='header-div'>
+                <div id='header-first' ref={about}>
+                    <div></div>
+                    <h1 id='header-name'>Lucas Benjamin Macchi</h1>
+                    {showBtn()}
+                </div>
+                {navigationBtns()}
+            </div>
+            <div id='basic-info' >
 
                 <div id='profileDiv' >
                     <img src="https://avatars.githubusercontent.com/u/62063233?v=4" alt="" id='ProfilePicture' />
@@ -42,12 +111,6 @@ export default function Home(){
                     <p id='intro'>Soy Lucas Benjamin Macchi, full stack web developer con experiencia en NodeJs, React, Redux y otras tecnologias. Ademas de contar con experiencia trabajando en equipo y metodologia SCRUM.</p>
                     }
                 </div>
-
-                <div id='Contact_button'>
-                    {language ? <button className='boton' onClick={() => setContactDetail(!contactDetail)}>Contact me</button> : <button className='boton'onClick={() => setContactDetail(!contactDetail)}>Contacto</button>}
-                    
-                </div>
-                    {showContactDetail()}
             </div>
             <div id='about-me-div'>
                 {language ? <h2>About me</h2> : <h2>Sobre mi</h2>}
@@ -59,7 +122,12 @@ export default function Home(){
                 </div>
                 
             </div>
-            {language ? <h4 id='find-more'>Find out more</h4> : <h4 id='find-more'>Descubre mas</h4>}
+            <div ref={edu}>
+                <EducationPage />
+            </div>
+            <div ref={tech}>
+                <Technologies />
+            </div>
             
         </div>
         

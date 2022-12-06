@@ -8,6 +8,7 @@ export const ChangeToEng = () => {
         })
     }
 }
+
 export const ChangeToEsp = () => {
     return (dispatch: Dispatch<Action>) => {
          dispatch({
@@ -15,3 +16,12 @@ export const ChangeToEsp = () => {
         })
     }
 }
+export const Start = () => {
+    return (dispatch: Dispatch<Action>) => {
+        console.log("caaa")
+        dispatch({
+            type: ActionType.START
+        })
+    }
+}
+
