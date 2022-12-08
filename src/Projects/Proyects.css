@@ -1,0 +1,24 @@
+#projectCardDiv{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 20px;
+    padding-bottom: 30px;
+    border-radius: 12px;
+    width: 300px;
+    background-color: #1A0E0E;
+    color: white;
+    padding-top: 30px;
+}
+#projectCardDiv img{
+    width: 250px;
+}
+#projectCardDiv p{
+    font-size: x-large;
+}
+#CardDivsPro{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+
+}

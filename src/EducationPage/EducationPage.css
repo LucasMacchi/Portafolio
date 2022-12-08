@@ -18,3 +18,10 @@
     align-items: center;
     justify-content: space-around;
 }
+#EducationPageline{
+    height: 15px;
+    width: 700px;
+    background-color: #1A0E0E;
+    border-color: #1A0E0E;
+    border-radius: 8px;
+}

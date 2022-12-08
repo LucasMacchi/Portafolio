@@ -5,6 +5,7 @@ import { bindActionCreators } from 'redux';
 import * as acciones from '../redux/actions';
 import EducationPage from '../EducationPage/EducationPage';
 import Technologies from '../Technologies/Tech';
+import Projects from '../Projects/Projects';
 import "../Header/Header.css"
 import "./Home.css"
 
@@ -18,6 +19,8 @@ export default function Home(){
     const edu = useRef(null)
     const about = useRef(null)
     const tech = useRef(null)
+    const proj = useRef(null)
+
 
 
     const scrollToSection = (elementRef: any) => {
@@ -40,6 +43,9 @@ export default function Home(){
                     <div className='btn-Div'>
                         <button className='boton-header' onClick={() => {scrollToSection(tech)}}>Technologies</button>
                     </div>
+                    <div className='btn-Div'>
+                        <button className='boton-header' onClick={() => {scrollToSection(proj)}}>Projects</button>
+                    </div>
                 </div>
             )
         }
@@ -54,6 +60,9 @@ export default function Home(){
                     </div>
                     <div className='btn-Div'>
                         <button className='boton-header' onClick={() => {scrollToSection(tech)}}>Tecnologias</button>
+                    </div>
+                    <div className='btn-Div'>
+                        <button className='boton-header' onClick={() => {scrollToSection(proj)}}>Proyectos</button>
                     </div>
                 </div>
             )
@@ -127,6 +136,9 @@ export default function Home(){
             </div>
             <div ref={tech}>
                 <Technologies />
+            </div>
+            <div ref={proj}>
+                <Projects/>
             </div>
             
         </div>

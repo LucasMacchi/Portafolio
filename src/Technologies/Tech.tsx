@@ -7,6 +7,7 @@ export default function Technologies(){
 
     return(
         <div>
+            <hr id='EducationPageline'/>
             <div id='divTituloEducacion'>
                 <h1 id='boton'>{language ? "Technologies" : "Tecnologias"}</h1>
             </div>

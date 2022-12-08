@@ -4,7 +4,6 @@ import { State } from './redux/utils';
 import { useSelector, useDispatch } from 'react-redux';
 import Particles from "./Config/Particles";
 import Starter from './Starter/Starter';
-import EducationPage from './EducationPage/EducationPage';
 import './App.css';
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
     <div id='main-div'>
       <Particles/>
       <div id="sec_div">
-        {started ? <Home/> : <Starter/>}
+        {started ? <Home/> : <Home/>}
       </div>
 
     </div>

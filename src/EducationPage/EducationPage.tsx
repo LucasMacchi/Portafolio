@@ -21,7 +21,8 @@ export default function ExperiencePage(){
 
     return(
 
-        <div >
+        <div id="EducationPageDIV">
+            <hr id="EducationPageline"/>
             <div id='divTituloEducacion'>
                 <h1 id='boton'>{language ? "Education and Certificates" : "Educacion y Certificados"}</h1>
             </div>
