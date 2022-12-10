@@ -6,6 +6,7 @@ import * as acciones from '../redux/actions';
 import EducationPage from '../EducationPage/EducationPage';
 import Technologies from '../Technologies/Tech';
 import Projects from '../Projects/Projects';
+import Contact from '../Contact/Contact';
 import "../Header/Header.css"
 import "./Home.css"
 
@@ -14,12 +15,12 @@ export default function Home(){
     const dispatch = useDispatch()
     const language = useSelector( (state: State) => state.lgn_eng)
     const {ChangeToEng, ChangeToEsp} = bindActionCreators(acciones, dispatch)
-    const [contactDetail, setContactDetail] = useState(false)
 
     const edu = useRef(null)
     const about = useRef(null)
     const tech = useRef(null)
     const proj = useRef(null)
+    const con = useRef(null)
 
 
 
@@ -46,6 +47,9 @@ export default function Home(){
                     <div className='btn-Div'>
                         <button className='boton-header' onClick={() => {scrollToSection(proj)}}>Projects</button>
                     </div>
+                    <div className='btn-Div'>
+                        <button className='boton-header' onClick={() => {scrollToSection(con)}}>Contact</button>
+                    </div>
                 </div>
             )
         }
@@ -63,6 +67,9 @@ export default function Home(){
                     </div>
                     <div className='btn-Div'>
                         <button className='boton-header' onClick={() => {scrollToSection(proj)}}>Proyectos</button>
+                    </div>
+                    <div className='btn-Div'>
+                        <button className='boton-header' onClick={() => {scrollToSection(con)}}>Contacto</button>
                     </div>
                 </div>
             )
@@ -98,6 +105,24 @@ export default function Home(){
     }
 
 
+    const contactButtonsStart = () => {
+        if(language){
+            return(
+                <div id='Contact_button'>
+                    <button className='boton_contact' onClick={() => {window.open("https://wa.me/5493794010009")}}>Message me</button>
+                </div>
+            )
+        }
+        else{
+            return(
+                <div id='Contact_button'>
+                    <button className='boton_contact' onClick={() => {window.open("https://wa.me/5493794010009")}}>Enviame un Mensaje</button>
+                </div>
+            )
+        }
+    }
+
+
     return(
         <div id='home'>
             <div id='header-div'>
@@ -115,14 +140,17 @@ export default function Home(){
                 </div>
 
                 <div id='info'>
-                    <h2>Full Stack Developer</h2>
+                    <div className='boton_info'>
+                        <h2 >Full Stack Developer</h2>
+                    </div>
                     {language ? <p id='intro'>Im Lucas Benjamin Macchi, full stack web developer with experience in NodeJs, Redux, React and other technologies. Adding to that, i have experience working as a team using the SCRUM methology.</p> :
                     <p id='intro'>Soy Lucas Benjamin Macchi, full stack web developer con experiencia en NodeJs, React, Redux y otras tecnologias. Ademas de contar con experiencia trabajando en equipo y metodologia SCRUM.</p>
                     }
+                    {contactButtonsStart()}
                 </div>
             </div>
             <div id='about-me-div'>
-                {language ? <h2>About me</h2> : <h2>Sobre mi</h2>}
+                {language ? <h2 className='boton_info'>About me</h2> : <h2 className='boton_info'>Sobre mi</h2>}
                 
                 <div id='about_me'>
                     {language ?<p>Im very passionate about computers and programming in general, i was surrounded by it all my life</p> : <p>Soy una persona muy apasionada por las computadoras y la programacion, toda mi vida estuve rodeado de las mismas.</p>}
@@ -139,6 +167,9 @@ export default function Home(){
             </div>
             <div ref={proj}>
                 <Projects/>
+            </div>
+            <div id='contactDivHome' ref={con}>
+                <Contact/>
             </div>
             
         </div>

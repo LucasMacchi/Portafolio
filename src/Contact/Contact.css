@@ -1,0 +1,37 @@
+
+#contactDiv{
+    width: 100%;
+    height: 250px;
+    color: white;
+}
+#allContactDiv{
+    background-color: #1A0E0E;
+    height: 100%;
+    border-radius: 10px;
+}
+#contactInfoDiv{
+    display: flex;
+    justify-content:space-around;
+}
+#contactImgs{
+    display: flex;
+    background-color: #1A0E0E;
+    justify-content: flex-end;
+}
+#contactImgs img{
+    margin-left: 20px;
+    width: 50px;
+    cursor: pointer;
+
+}
+#donwloadH3{
+    color: red;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+#donwloadH3:hover{
+    font-size: x-large;
+}
+#contactImgs img:hover{
+    width: 80px;
+}
