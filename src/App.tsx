@@ -15,7 +15,7 @@ function App() {
     <div id='main-div'>
       <Particles/>
       <div id="sec_div">
-        {started ? <Home/> : <Starter/>}
+        {started ? <Home/> : <Home/>}
       </div>
 
     </div>

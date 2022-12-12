@@ -127,7 +127,6 @@ export default function Home(){
         <div id='home'>
             <div id='header-div'>
                 <div id='header-first' ref={about}>
-                    <div></div>
                     <h1 id='header-name'>Lucas Benjamin Macchi</h1>
                     {showBtn()}
                 </div>

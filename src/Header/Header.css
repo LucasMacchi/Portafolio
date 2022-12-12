@@ -6,22 +6,23 @@
 #header-first{
     display: flex;
 
-    justify-content:space-between;
+    justify-content:flex-end;
 }
 #lng-change{
     display: flex;
     align-items: center;
+    
 }
 #header-name{
     color: white;
     display: flex;
     justify-content: center;
+    margin-right: 20%;
 }
 .lng-buttons{
     color: white;
     margin-right: 2pc;
-    width: 50px;
-    height: 40px;
+
     cursor: pointer;
 }
 
@@ -54,4 +55,20 @@
     display: flex;
     justify-content: space-around;
     height: 70px;
+}
+@media screen and (max-width: 400px) {
+    #navBar-header{
+        display: none;
+    }
+    #header-name{
+        font-size: xx-large;
+        flex-direction: column;
+    }
+    #lng-change{
+        
+        
+    }
+    .lng-buttons{
+       font-size: x-large;
+    }
 }

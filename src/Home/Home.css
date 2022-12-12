@@ -113,3 +113,16 @@
     border-radius: 10px;
 }
 
+@media screen and (max-width: 400px) {
+    #basic-info{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        margin-bottom: 1pc;
+        margin-top: 1pc;
+    }
+    #profileDiv{
+        width:300px;
+        margin-left: 2pc;
+    }
+}
