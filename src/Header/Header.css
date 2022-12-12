@@ -5,8 +5,7 @@
 }
 #header-first{
     display: flex;
-
-    justify-content:flex-end;
+    justify-content:center;
 }
 #lng-change{
     display: flex;
