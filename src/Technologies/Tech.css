@@ -4,6 +4,9 @@
     margin-left: 5px;
     margin-right: 5px;
     flex-wrap: wrap;
+    background-color: #1a0e0e;
+    color: white;
+    border-radius: 10px;
 }
 .tech_image{
     width: 100px;
