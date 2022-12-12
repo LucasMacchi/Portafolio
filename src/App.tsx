@@ -1,14 +1,13 @@
 import React from 'react';
 import Home from "./Home/Home"
 import { State } from './redux/utils';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import Particles from "./Config/Particles";
 import Starter from './Starter/Starter';
 import './App.css';
 
 function App() {
 
-  const dispatch = useDispatch()
   const started = useSelector( (state: State) => state.started)
 
   return (
