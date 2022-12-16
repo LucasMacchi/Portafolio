@@ -25,3 +25,23 @@
     border-color: #1A0E0E;
     border-radius: 8px;
 }
+@media screen and (max-width: 400px){
+    #EducationPageline{
+        display: none;
+    }
+    #expPageDiv{
+        justify-content: flex-start;
+    }
+    #divTituloEducacion{
+        justify-content: flex-start;
+    }
+    #boton{
+        display: flex;
+        background-color: #1A0E0E;
+        font-size: medium;
+        color: white;
+        width: 200px;
+        border-radius: 10px;
+        padding: 20px;
+    }
+}

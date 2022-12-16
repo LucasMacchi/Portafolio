@@ -22,3 +22,14 @@
     cursor: pointer;
 
 }
+@media screen and (max-width: 400px){
+    #expCardDiv{
+        width: 200px;
+        font-size: small;
+        margin: 10px;
+        height: auto;
+    }
+    #img{
+        display: none;
+    }
+}

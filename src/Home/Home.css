@@ -115,14 +115,29 @@
 
 @media screen and (max-width: 400px) {
     #basic-info{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content:center;
-        margin-bottom: 1pc;
-        margin-top: 1pc;
+        flex-direction: column;
     }
     #profileDiv{
         width:300px;
         margin-left: 2pc;
+    }
+    .boton_info{
+        background-color: #1A0E0E;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    .boton_info h2{
+        font-size: 20px;
+    }
+    #info{
+        width: 250px;
+    }
+    #about-me-div{
+        width: 250px;
     }
 }

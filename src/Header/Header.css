@@ -1,3 +1,5 @@
+
+
 #header-div{
     position: sticky;
     top: 0;
@@ -55,18 +57,28 @@
     height: 70px;
 }
 @media screen and (max-width: 400px) {
+    #header-div{
+        position: sticky;
+        top: 0;
+    }
+    #header-first{
+        width: 323px;
+        
+    }
     #navBar-header{
         display: none;
     }
     #header-name{
-        font-size: xx-large;
+        font-size:medium;
         flex-direction: column;
+        margin-right: 10px;
     }
     #lng-change{
         
         
     }
     .lng-buttons{
-       font-size: x-large;
+        margin-right: 10px;
+       font-size: x-small;
     }
 }

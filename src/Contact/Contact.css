@@ -35,3 +35,21 @@
 #contactImgs img:hover{
     width: 80px;
 }
+@media screen and (max-width: 400px){
+    #contactDiv{
+        height: 350px;
+    }
+    #contactInfoDiv{
+        display: block;
+        align-items: center;
+    }
+    #contactInfoDiv h1{
+        font-size: x-large;
+    }
+    #contactInfoDiv h3{
+        font-size: medium;
+    }
+    #contactImgs img{
+        margin-right: 20px;
+    }
+}

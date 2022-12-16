@@ -22,3 +22,22 @@
     padding-bottom: 50px;
 
 }
+@media screen and (max-width: 400px){
+    #CardDivsPro{
+        justify-content: flex-start;
+    }
+    #projectCardDiv img{
+        width: 150px;
+    }
+    #projectCardDiv p{
+        font-size: medium;
+    }
+    #projectCardDiv{
+        margin-bottom: 40px;
+        margin-left: 10px;
+        width: 230px;
+        background-color: #1A0E0E;
+        color: white;
+        padding-top: 30px;
+    }
+}
