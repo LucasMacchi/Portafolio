@@ -22,7 +22,7 @@
     cursor: pointer;
 
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     #expCardDiv{
         width: 200px;
         font-size: small;

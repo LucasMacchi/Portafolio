@@ -41,7 +41,7 @@
     padding: 20px;
     font-weight: 600;
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     #divTech{
         justify-content: flex-start;
         width: 270px;

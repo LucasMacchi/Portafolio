@@ -113,7 +113,7 @@
     border-radius: 10px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     #basic-info{
         flex-direction: column;
     }
