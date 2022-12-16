@@ -41,3 +41,36 @@
     padding: 20px;
     font-weight: 600;
 }
+@media screen and (max-width: 400px){
+    #divTech{
+        justify-content: flex-start;
+        width: 270px;
+    }
+    .tech_image{
+        width: 50px;
+    }
+    #nodeImg{
+        width: 90px;
+    }
+    #reactImg{
+        width: 65px;
+    }
+    #CssImg{
+        width: 35px;
+    }
+    #ReduxImg{
+        width: 62px;
+    }
+    #SeqImg{
+        width: 50px;
+    }
+    #ExpressImg{
+        width: 90px;
+    }
+    #PostImg{
+        width: 50px;
+    }
+    #gitImg{
+        width: 50px;
+    }
+}
