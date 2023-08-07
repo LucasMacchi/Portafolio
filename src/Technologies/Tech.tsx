@@ -25,6 +25,18 @@ export default function Technologies(){
                     <label htmlFor="">React</label>
                 </div>
                 <div className='Technologies'>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fangular-icon-1-logo-png-transparent.png&f=1&nofb=1&ipt=06578228dd32ea04162ee38114038acd46c98c24a1bdaf4a1bcf1cc6518876b6&ipo=images" alt="" className='tech_image'/>
+                    <label htmlFor="">Angular</label>
+                </div>
+                <div className='Technologies'>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcommerceda.com%2Fimages%2Fmaterial-ui-logo.png&f=1&nofb=1&ipt=604492c61c3d6187e6cd6832827437ea6cbc642e533f95805f170bbb84783851&ipo=images" alt="" id='reactImg'/>
+                    <label htmlFor="">Material UI</label>
+                </div>
+                <div className='Technologies'>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fionicacademy.com%2Fwp-content%2Fuploads%2F2017%2F06%2Fionic-logo-portrait.png%3Fssl%3D1&f=1&nofb=1&ipt=e2d1732e1688f102f1249fccfecaabf3940b622be3a084435531e10e74015ed9&ipo=images" alt="" id='reactImg'/>
+                    <label htmlFor="">Ionic</label>
+                </div>
+                <div className='Technologies'>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" alt="" id='nodeImg'/>
                     <label htmlFor="">NodeJS</label>
                 </div>
