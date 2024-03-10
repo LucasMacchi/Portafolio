@@ -30,16 +30,7 @@ export default function Projects(){
         des: "Proyecto individual de Henry, cubriendo todo los temas dados tanto de front-end y back-end. Este trata de una pagina para ver y agregar recetas saludables, utilizando una API externa, Spoonacular.com",
         des_eng: "Individual Project for Henry, covering all the technologies learnt at the bootcamp. This app consist of a page to see and add new recipes, using an external API, Spoonacular.com",
         repo_front: "https://github.com/LucasMacchi/Food-PI-SoyHenry"
-    },
-    {
-        image:"https://github.com/LucasMacchi/Portafolio/blob/Deploy/imgs/asig.png?raw=true",
-        des: "Proyecto para organizar tus tareas semanales, como tambien una lista de actividades para hacer.",
-        des_eng: "Project made to organize your weekly schedule and a to do list.",
-        deploy: "https://asignatures-project.vercel.app/",
-        repo_back:"https://github.com/LucasMacchi/asignature-server",
-        repo_front: "https://github.com/LucasMacchi/Asignatures-Project"
-    }
-]
+    }]
 
     const projectCards = () => {
 
