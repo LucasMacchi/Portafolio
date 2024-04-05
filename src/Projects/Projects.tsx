@@ -21,7 +21,7 @@ export default function Projects(){
         image:"https://github.com/LucasMacchi/Portafolio/blob/main/imgs/cloth.pf.png?raw=true",
         des: "Proyecto grupal de Henry con 8 integrantes, es un e-commerce de ropa con autenticacion de terceros y mercado pago. Mi rol en el grupo fue de desarollador back-end.",
         des_eng: "Group project for Henry with 8 members, an e-commerce of clothes with third party authentication and payment with mercado pago. My role was back-end developer.",
-        deploy: "https://express-clothes.vercel.app/",
+        deploy: "https://pf-clothes.vercel.app/home",
         repo_back:"https://github.com/LucasMacchi/PF-Clothes-Backend",
         repo_front: "https://github.com/Carsefer/PF-Clothes-Client"
     },
