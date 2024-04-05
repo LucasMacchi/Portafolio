@@ -6,9 +6,9 @@ export default function Contact(){
     const language = useSelector( (state: State) => state.lgn_eng)
 
     const donwloadCV = () => {
-        if(language) window.open("https://drive.google.com/file/d/1qonYvUYvPDoD8itZ9MwvEOuJR4-v4y4E/view?usp=share_link")
+        if(language) window.open("https://drive.google.com/file/d/1D9wuAy0cdnCQt7OQtt1rLRomZg_1-5sw/view?usp=sharing")
         
-        else window.open("https://drive.google.com/file/d/1DCOTBS9IW4fL6c43zduz4PYRHzsfQeyw/view?usp=share_link")
+        else window.open("https://drive.google.com/file/d/1F94zSI3jYHOPyJYc7tr0wyGbjBZxOAcV/view?usp=sharing")
     }
 
 
