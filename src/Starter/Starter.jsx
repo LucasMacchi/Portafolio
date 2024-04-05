@@ -32,7 +32,7 @@ export default function Starter(){
             />
             </p>
             </div>
-            <button id='botonStarter' onClick={() => StartPage()}>Empezemos</button>
+            <button id='botonStarter' onClick={() => StartPage()}>Empecemos</button>
         </div>
     )
 }

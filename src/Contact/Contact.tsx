@@ -6,9 +6,9 @@ export default function Contact(){
     const language = useSelector( (state: State) => state.lgn_eng)
 
     const donwloadCV = () => {
-        if(language) window.open("https://drive.google.com/file/d/1D9wuAy0cdnCQt7OQtt1rLRomZg_1-5sw/view?usp=sharing")
+        if(language) return "https://drive.google.com/file/d/1D9wuAy0cdnCQt7OQtt1rLRomZg_1-5sw/view?usp=sharing"
         
-        else window.open("https://drive.google.com/file/d/1F94zSI3jYHOPyJYc7tr0wyGbjBZxOAcV/view?usp=sharing")
+        else return "https://drive.google.com/file/d/1F94zSI3jYHOPyJYc7tr0wyGbjBZxOAcV/view?usp=sharing"
     }
 
 
@@ -30,7 +30,7 @@ export default function Contact(){
                     </div>
                     <div>
                         <h1>CV</h1>
-                        <h3 id='donwloadH3' onClick={() => donwloadCV() } >{language ? "See CV" : "Ver CV"}</h3>
+                        <a id='donwloadH3' href={donwloadCV()} >{language ? "See CV" : "Ver CV"}</a>
                     </div>
                 </div>
                 <div id='contactImgs'>
