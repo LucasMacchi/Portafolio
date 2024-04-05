@@ -22,7 +22,7 @@ const initialState: State = {
         where: "UTN FRRe",
         where_eng: "UTN FRRe",
         from: "2020",
-        to: "Now",
+        to: "2024",
         des: "Este me dio conocimientos en computadoras, matematicas, estadistica y en JAVA y C#",
         des_eng: "This career gave me knowledge in computers, math, statistics and in JAVA and C#",
         link:"https://drive.google.com/file/d/1-HZrND3Ks_ZROasbdSBAdG2r3sMgMyV0/view",

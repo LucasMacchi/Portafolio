@@ -38,8 +38,7 @@ export default function Projects(){
         deploy: "https://asignatures-project.vercel.app/",
         repo_back:"https://github.com/LucasMacchi/asignature-server",
         repo_front: "https://github.com/LucasMacchi/Asignatures-Project"
-    }
-]
+    }]
 
     const projectCards = () => {
 

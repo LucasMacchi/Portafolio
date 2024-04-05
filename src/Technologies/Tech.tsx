@@ -65,6 +65,10 @@ export default function Technologies(){
                     <label htmlFor="">PostgreSQL</label>
                 </div>
                 <div className='Technologies'>
+                    <img src="https://miro.medium.com/v2/resize:fit:512/1*doAg1_fMQKWFoub-6gwUiQ.png" alt="" className='tech_image'/>
+                    <label htmlFor="">Mongodb</label>
+                </div>
+                <div className='Technologies'>
                     <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="" id='gitImg'/>
                     <label htmlFor="">GIT</label>
                 </div>
@@ -72,6 +76,7 @@ export default function Technologies(){
                     <img src="https://cdn-icons-png.flaticon.com/512/6124/6124991.png" alt="" className='tech_image'/>
                     <label htmlFor="">Trello</label>
                 </div>
+
             </div>
         </div>
     )
